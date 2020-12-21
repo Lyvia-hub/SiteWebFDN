@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "siteWeb-FDN"
+    }
+  },
+  "defaultProject": "siteWeb-FDN",
+  "cli": {
+    "analytics": "4ff89448-a42a-4572-b5c1-db3d669933b0"
+  }
 }
