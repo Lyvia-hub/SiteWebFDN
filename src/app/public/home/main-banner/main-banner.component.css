@@ -1,0 +1,27 @@
+.max-height {
+  min-height: calc(100vh - 76px);
+  background: url("../../../../assets/img/main-banner-img.jpg") center/cover no-repeat fixed;
+  position: relative;
+}
+
+.main-banner,
+.banner-link {
+  color: var(--mainBlack);
+  margin-top: -4rem;
+}
+
+.banner-title {
+  color: var(--mainRed);
+  font-size: 4rem;
+}
+
+.banner-link {
+  font-size: 1.5rem;
+  border: 0.2rem solid var(--mainBlack);
+}
+
+.banner-link:hover {
+  background: var(--mainBlack);
+  color: var(--mainRed);
+}
+/*# sourceMappingURL=main-banner.component.css.map */
