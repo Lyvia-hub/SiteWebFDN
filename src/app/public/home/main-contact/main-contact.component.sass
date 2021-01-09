@@ -1,0 +1,238 @@
+.contact
+  background: url('../../../../assets/img/logoFDN.jpg') center / cover no-repeat fixed
+
+.contact-h1
+  color: var(--mainWhite)
+.contact-title
+  font-size: 4rem
+  color: var(--mainWhite)
+
+input,
+textarea
+  outline: none
+  border: none
+
+textarea:focus,
+input:focus
+  border-color: transparent !important
+
+input:focus::-webkit-input-placeholder
+  color:transparent
+input:focus:-moz-placeholder
+  color:transparent
+input:focus::-moz-placeholder
+  color:transparent
+input:focus:-ms-input-placeholder
+  color:transparent
+
+textarea:focus::-webkit-input-placeholder
+  color:transparent
+textarea:focus:-moz-placeholder
+  color:transparent
+textarea:focus::-moz-placeholder
+  color:transparent
+textarea:focus:-ms-input-placeholder
+  color:transparent
+
+input::-webkit-input-placeholder
+  color: #aaaaaa
+input:-moz-placeholder
+  color: #aaaaaa
+input::-moz-placeholder
+  color: #aaaaaa
+input:-ms-input-placeholder
+  color: #aaaaaa
+
+textarea::-webkit-input-placeholder
+  color: #aaaaaa
+textarea:-moz-placeholder
+  color: #aaaaaa
+textarea::-moz-placeholder
+  color: #aaaaaa
+textarea:-ms-input-placeholder
+  color: #aaaaaa
+
+
+/*** Contact ***/
+
+.form-contact
+  width: 1163px
+  background: var(--mainWhite)
+  border-radius: 10px
+  overflow: hidden
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  padding: 110px 130px 157px 148px
+
+.contact-img
+  width: 310px
+  padding-top: 55px
+
+
+/*** Form ***/
+
+.contact100-form
+  width: 390px
+
+.contact100-form-title
+  display: block
+  font-family: Montserrat-ExtraBold
+  font-size: 24px
+  color: #333333
+  line-height: 1.2
+  text-align: left
+  padding-bottom: 36px
+
+.input-container
+  position: relative
+  width: 100%
+  z-index: 1
+  margin-bottom: 10px
+
+.input-field
+  display: block
+  width: 100%
+  background: #e6e6e6
+  font-family: 'Fredoka One', cursive
+  font-size: 15px
+  line-height: 1.5
+  color: #666666
+
+input.input-field
+  height: 50px
+  border-radius: 25px
+  padding: 0 30px 0 50px
+
+input.input-field[name="email"]
+  padding: 0 30px 0 54px
+
+textarea.input-field
+  min-height: 150px
+  border-radius: 25px
+  padding: 14px 30px
+
+/*** Form Focus ***/
+
+.focus-input-field
+  display: block
+  position: absolute
+  border-radius: 25px
+  bottom: 0
+  left: 0
+  z-index: -1
+  width: 100%
+  height: 100%
+  box-shadow: 0px 0px 0px 0px
+  color: rgba(0,56,31, 0.5)
+
+
+.input-field:focus + .focus-input-field
+  -webkit-animation: anim-shadow 0.5s ease-in-out forwards
+  animation: anim-shadow 0.5s ease-in-out forwards
+
+
+@-webkit-keyframes anim-shadow
+  to
+    box-shadow: 0px 0px 60px 25px
+    opacity: 0
+
+@keyframes anim-shadow
+  to
+    box-shadow: 0px 0px 60px 25px
+    opacity: 0
+
+.symbol-input100
+  display: -webkit-box
+  display: -webkit-flex
+  display: -moz-box
+  display: -ms-flexbox
+  display: flex
+  align-items: center
+  position: absolute
+  border-radius: 25px
+  bottom: 0
+  left: 0
+  width: 100%
+  height: 100%
+  padding-left: 30px
+  pointer-events: none
+  color: #aaaaaa
+  font-size: 15px
+  transition: all 0.4s
+
+.input-field:focus + .focus-input-field + .symbol-input100
+  color: var(--mainGreen)
+  padding-left: 22px
+
+
+/*** Button ***/
+
+.btn-black
+  outline: none !important
+  border: none
+  background: transparent
+  border: 0.2rem solid var(--mainBlack)
+  color: var(--mainBlack)
+  width: 100%
+  padding-top: 20px
+  width: 100%
+  height: 50px
+  border-radius: 25px
+  font-size: 15px
+  line-height: 1.5
+  color: var(--mainBlack)
+  padding: 0 25px
+  transition: all 0.4s
+  display: flex
+  justify-content: center
+  align-items: center
+
+.btn-black:hover
+  border: 0.2rem solid var(--mainGreen)
+  background: var(--mainGreen)
+  color: var(--mainBlack)
+  font-weight: bold
+
+  .send
+    margin-left: 5px
+
+/*--------------------------------------------------------------[ Responsive ]*/
+
+@media (max-width: 1200px)
+  .contact-img
+    width: 33.5%
+
+  .contact100-form
+    width: 44%
+
+@media (max-width: 992px)
+  .form-contact
+    padding: 110px 80px 157px 90px
+
+  .contact-img
+    width: 35%
+
+  .contact100-form
+    width: 55%
+
+
+@media (max-width: 768px)
+  .form-contact
+    padding: 110px 80px 157px 80px
+
+
+  .contact-img
+    display: none
+
+
+  .contact100-form
+    width: 100%
+
+
+@media (max-width: 576px)
+  .form-contact
+    padding: 110px 15px 157px 15px
+
+
+

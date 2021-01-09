@@ -5,6 +5,7 @@ import { MainBannerComponent } from './main-banner/main-banner.component';
 import { MainFdnPresentationComponent } from './main-fdn-presentation/main-fdn-presentation.component';
 import { MainSvodComponent } from './main-svod/main-svod.component';
 import { MainTeamComponent } from './main-team/main-team.component';
+import { MainContactComponent } from './main-contact/main-contact.component';
 
 
 
@@ -14,7 +15,8 @@ import { MainTeamComponent } from './main-team/main-team.component';
     MainBannerComponent,
     MainFdnPresentationComponent,
     MainSvodComponent,
-    MainTeamComponent
+    MainTeamComponent,
+    MainContactComponent
   ],
   imports: [
     SharedModule
