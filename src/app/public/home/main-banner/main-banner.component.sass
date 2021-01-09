@@ -1,12 +1,19 @@
 .max-height
   min-height: calc(100vh - 76px)
-  background: url('../../../../assets/img/main-banner-img.jpg') center/cover no-repeat fixed
   position: relative
+  background: url('../../../../assets/img/accueil_mobile.png') center/cover no-repeat fixed
+  @media (min-width: 768px)
+    background-image: url('../../../../assets/img/accueil_tablette.png')
+  @media (min-width: 1200px)
+    background-image: url('../../../../assets/img/accueil_desktop.png')
 
 .main-banner,
 .banner-link
   color: var(--mainBlack)
   margin-top: -4rem
+
+.main-banner
+  text-shadow: 1px 0px 3px rgba(0,0,0,0.8)
 
 .banner-title
   color: var(--mainWhite)

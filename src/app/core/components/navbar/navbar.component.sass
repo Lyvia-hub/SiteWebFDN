@@ -26,4 +26,15 @@
   color: var(--mainGreen) !important
   cursor: pointer
 
+#myNavbar
+  justify-content: flex-end
 
+  .dropdown-toggle
+    &:after
+      vertical-align: middle
+
+  li
+    text-align: right
+    @media (min-width: 992px)
+      text-align: left
+      margin-left: 2rem
