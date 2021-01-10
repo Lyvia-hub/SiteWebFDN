@@ -3,8 +3,10 @@
   min-height: 100vh
 
 .about-title
-  font-size: 4rem
   color: var(--mainGreen)
+  font-size: 2rem
+  @media (min-width: 576px)
+    font-size: 4rem
 
 .about-info
   text-align: justify
@@ -32,6 +34,18 @@
   position: absolute
   top: 1.5rem
   left: 2.5rem
+  ul
+    width: 100%
+    display: flex
+    list-style: none
+    padding: 0
+    @media (min-width: 576px)
+      display: block
+    li
+      margin-right: .5rem
+      @media (min-width: 576px)
+        margin-left: 0
+        margin-bottom: 1rem
 
 .about_social-network
   width: 50px
@@ -47,3 +61,7 @@
 
 .info_social-network
   font-size: 1rem
+
+.align-self-center
+    position: relative
+    left: 3rem
