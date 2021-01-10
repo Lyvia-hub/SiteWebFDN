@@ -1,39 +1,54 @@
+
 <header id="header">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
-    <a href="#" class="navbar-brand">
+
+    <!-- logo FDN -->
+    <a class="navbar-brand" routerLink="home">
       <img class="logoFDN" src="../../../../assets/img/logoFDN.jpg" alt="logo FDN">
       <span class="FDN">FDN</span>
     </a>
+
+    <!-- burger menu -->
     <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#myNavbar">
-        <span class="toggler-icon material-icons">
-          menu
-        </span>
+        <span class="toggler-icon material-icons">menu</span>
     </button>
-    <div class="collapse navbar-collapse ml-auto" id="myNavbar">
+
+    <div class="collapse navbar-collapse ml-auto">
       <ul class="navbar-nav">
+
+        <!-- Accueil -->
         <li class="nav-item active">
-          <a class="nav-link">Accueil</a>
+          <a class="nav-link" routerLink="home">Accueil</a>
         </li>
+
+        <!-- Présentation FDN -->
         <li class="nav-item">
-          <a class="nav-link">A propos de FDN</a>
+          <a class="nav-link" routerLink="presentation-fdn">A propos de FDN</a>
         </li>
+
+        <!-- svod -->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown">SVOD</a>
           <ul class="dropdown-menu">
-            <li>
-              <a class="dropdown-item" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown">Netflix</a></li>
+            <li><a class="dropdown-item">Netflix</a></li>
             <li><a class="dropdown-item" href="#">OCS</a></li>
             <li><a class="dropdown-item" href="#">Disney +</a></li>
             <li><a class="dropdown-item" href="#">Amazon Prime Video</a></li>
           </ul>
         </li>
+
+        <!-- team fdn -->
         <li class="nav-item">
-          <a class="nav-link">La Team</a>
+          <a class="nav-link" routerLink="team">La Team</a>
         </li>
+
+        <!-- Contact -->
         <li class="nav-item">
-          <a class="nav-link">Contacts</a>
+          <a class="nav-link" routerLink="contact">Contact</a>
         </li>
       </ul>
+
+      <!-- logo e-shop -->
       <!--
         <div class="nav-info-items d-none d-lg-flex">
 
@@ -53,3 +68,4 @@
     </div>
   </nav>
 </header>
+<router-outlet></router-outlet>
