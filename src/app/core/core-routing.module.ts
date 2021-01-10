@@ -9,9 +9,12 @@ import { MainSvodComponent } from '../public/home/main-svod/main-svod.component'
 import { MainTeamComponent } from '../public/home/main-team/main-team.component';
 import { MainContactComponent } from '../public/home/main-contact/main-contact.component';
 
+import { MainNetflixComponent } from '../public/svod/svod-netflix/main-netflix/main-netflix.component';
+
 const routes: Routes = [
   {
-    path: '', component: MainPageComponent,
+    path: '',
+    component: MainPageComponent,
     children: [
       {
         path: 'presentation-fdn',
@@ -28,6 +31,10 @@ const routes: Routes = [
       {
         path: 'contact',
         component: MainContactComponent
+      },
+      {
+        path: 'svod-netflix',
+        component: MainNetflixComponent
       }
     ]
   }

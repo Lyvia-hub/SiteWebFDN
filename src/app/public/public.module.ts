@@ -3,6 +3,7 @@ import { SharedModule } from '../shared/shared.module';
 
 import { PublicRoutingModule } from './public-routing.module';
 import { HomeModule } from './home/home.module';
+import { SvodModule } from './svod/svod.module';
 
 
 @NgModule({
@@ -10,7 +11,8 @@ import { HomeModule } from './home/home.module';
   imports: [
     SharedModule,
     PublicRoutingModule,
-    HomeModule
+    HomeModule,
+    SvodModule
   ]
 })
 export class PublicModule { }

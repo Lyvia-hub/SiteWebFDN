@@ -1,9 +1,9 @@
 import { NgModule, Optional, SkipSelf } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { PublicModule } from '../public/public.module';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { PublicModule } from '../public/public.module';
 import { PublicRoutingModule } from '../public/public-routing.module';
 
 @NgModule({
