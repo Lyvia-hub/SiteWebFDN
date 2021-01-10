@@ -5,212 +5,121 @@
     <div class="row ">
         <h1 class="team-h1">La TEAM <strong class="team-title">FDN</strong></h1>
     </div>
-    <!-- les Fondateurs -->
-    <div class="row fondateurs text-center encart">
-      <h1>Les Fondateurs</h1>
-        <!-- Charly -->
-      <div class="col-lg-4 col-md-4 col-sm-12">
-        <div class="our-team">
-          <div class="pic">
-            <img src="../../../../assets/img/avatar_charly3.jpg">
-          </div>
-          <div class="team-content">
-            <h3 class="title">Charly</h3>
-            <span class="post">
-              Administrateur
-            </span>
-          </div>
-          <p class="description">
-            Communication et gestion des groupes
-          </p>
-        </div>
-      </div>
-
+    <!-- Onglets -->
+    <ul class="team-list-tabs">
+      <!-- Les Fondateurs -->
+      <li [ngClass]="{'actived': tabActived === 1}">
+        <a href="#pills-fondateurs" (click)="changeTab($event, 1)">Les fondateurs</a>
+      </li>
+      <!-- les Admins / modo -->
+      <li [ngClass]="{'actived': tabActived === 2}">
+        <a href="#pills-modos" (click)="changeTab($event, 2)">Les Admins et Modérateurs</a>
+      </li>
+      <!-- les renforts -->
+      <li [ngClass]="{'actived': tabActived === 3}">
+        <a href="#pills-renforts" (click)="changeTab($event, 3)">Renforts</a>
+      </li>
+    </ul>
+    <!-- Contenus -->
+    <!-- Les Fondateurs -->
+    <ul class="team-list-content" *ngIf="tabActived === 1">
+      <!-- Charly -->
+      <li>
+        <img src="../../../../assets/img/avatar_charly3.jpg">
+        <h3 class="title">Charly</h3>
+        <span class="role">Administrateur</span>
+        <p class="description">Communication et gestion des groupes</p>
+      </li>
       <!-- Kevin -->
-      <div class="col-lg-4 col-md-4 col-sm-12">
-        <div class="our-team">
-          <div class="pic">
-            <img src="../../../../assets/img/avatar_kevin.jpg">
-          </div>
-          <div class="team-content">
-            <h3 class="title">Kevin</h3>
-            <span class="post">
-              Administrateur
-            </span>
-          </div>
-          <p class="description">Evolution numérique FDN</p>
-        </div>
-      </div>
-
+      <li>
+        <img src="../../../../assets/img/avatar_kevin.jpg">
+        <h3 class="title">Kévin</h3>
+        <span class="role">Administrateur</span>
+        <p class="description">Evolution numérique FDN</p>
+      </li>
       <!-- Dylan -->
-      <div class="col-lg-4 col-md-4 col-sm-12">
-        <div class="our-team">
-          <div class="pic">
-            <img src="../../../../assets/img/avatar_dylan.jpg">
-          </div>
-          <div class="team-content">
-            <h3 class="title">Dylan</h3>
-            <span class="post">
-              Administrateur
-            </span>
-          </div>
-          <p class="description">Gestion de la page FDN</p>
-        </div>
-      </div>
-    </div>
+      <li>
+        <img src="../../../../assets/img/avatar_dylan.jpg">
+        <h3 class="title">Dylan</h3>
+        <span class="role">Administrateur</span>
+        <p class="description">Gestion de la page FDN</p>
+      </li>
+    </ul>
 
-    <!-- les Admins et modérateurs -->
-    <div class="row admins-modes text-center encart">
-      <h1>Les Admins et Modérateurs</h1>
-
+    <!-- les Admins / modo -->
+    <ul class="team-list-content" *ngIf="tabActived === 2">
       <!-- Neopha -->
-      <div class="col-lg-4 col-md-4 col-sm-6">
-        <div class="our-team">
-          <div class="pic">
-            <img src="../../../../assets/img/avatar_neopha.jpg">
-          </div>
-          <div class="team-content">
-            <h3 class="title">Neopha</h3>
-            <span class="post">
-              Administratrice
-            </span>
-          </div>
-          <p class="description">Co-Gestion des groupes FDN Community</p>
-        </div>
-      </div>
-
+      <li>
+        <img src="../../../../assets/img/avatar_neopha.jpg">
+        <h3 class="title">Neopha</h3>
+        <span class="role">Administratrice</span>
+        <p class="description">Co-Gestion des groupes FDN Community</p>
+      </li>
       <!-- Angèle -->
-      <div class="col-lg-4 col-md-4 col-sm-6">
-        <div class="our-team">
-          <div class="pic">
-            <img src="../../../../assets/img/avatar_angèle.jpg">
-          </div>
-          <div class="team-content">
-            <h3 class="title">Angèle</h3>
-            <span class="post">
-              Administratrice et Modératrice
-            </span>
-          </div>
-          <p class="description">Admin du groupe connexe Disney Plus <br>Modératrice du groupe FDN France</p>
-        </div>
-      </div>
-
+      <li>
+        <img src="../../../../assets/img/avatar_angèle.jpg">
+        <h3 class="title">Angèle</h3>
+        <span class="role">Administratrice et Modératrice</span>
+        <p class="description">Admin du groupe connexe Disney Plus <br>Modératrice du groupe FDN France</p>
+      </li>
       <!-- Chris -->
-      <div class="col-lg-4 col-md-4 col-sm-6">
-        <div class="our-team">
-          <div class="pic">
-            <img src="../../../../assets/img/avatar_Chris.jpg">
-          </div>
-          <div class="team-content">
-            <h3 class="title">Chris</h3>
-            <span class="post">
-              Administratrice et Modératrice
-            </span>
-          </div>
+      <li>
+          <img src="../../../../assets/img/avatar_Chris.jpg">
+          <h3 class="title">Chris</h3>
+          <span class="role">Administratrice et Modératrice</span>
           <p class="description">Admin du groupe connexe OCS <br>Modératrice du groupe FDN France</p>
-        </div>
-      </div>
-
+      </li>
       <!-- Aghilles -->
-      <div class="col-lg-4 col-md-4 col-sm-6">
-        <div class="our-team">
-          <div class="pic">
-            <img src="../../../../assets/img/avatar_aghilles.jpg">
-          </div>
-          <div class="team-content">
-            <h3 class="title">Aghilles</h3>
-            <span class="post">
-              Administreur et Modérateur
-            </span>
-          </div>
-          <p class="description">Admin du groupe connexe Amazon Prime
-            <br>Modérateur du groupe FDN France
-            <br>Support animations et visuels FDN
-          </p>
-        </div>
-      </div>
-
+      <li>
+        <img src="../../../../assets/img/avatar_aghilles.jpg">
+        <h3 class="title">Aghilles</h3>
+        <span class="role">Administreur et Modérateur</span>
+        <p class="description">Admin du groupe connexe Amazon Prime
+          <br>Modérateur du groupe FDN France
+          <br>Support animations et visuels FDN
+        </p>
+      </li>
       <!-- Lyvia -->
-      <div class="col-lg-4 col-md-4 col-sm-6">
-        <div class="our-team">
-          <div class="pic">
-            <img src="../../../../assets/img/avatar_lyvia.jpg">
-          </div>
-          <div class="team-content">
-            <h3 class="title">Lyvia</h3>
-            <span class="post">
-              Administratrice et Modératrice
-            </span>
-          </div>
-          <p class="description">Admin du groupe FB FDN Canada
-            <br>Modératrice du groupe FDN France
-            <br>Maintenance du site web FDN
-          </p>
-        </div>
-      </div>
-
+      <li>
+        <img src="../../../../assets/img/avatar_lyvia.jpg">
+        <h3 class="title">Lyvia</h3>
+        <span class="role">
+          Administratrice et Modératrice
+        </span>
+        <p class="description">Admin du groupe FB FDN Canada
+          <br>Modératrice du groupe FDN France
+          <br>Maintenance du site web FDN
+        </p>
+      </li>
       <!-- Karrol -->
-      <div class="col-lg-4 col-md-4 col-sm-6">
-        <div class="our-team">
-          <div class="pic">
-            <img src="../../../../assets/img/avatar_x.jpg">
-          </div>
-          <div class="team-content">
-            <h3 class="title">Karrol</h3>
-            <span class="post">
-              Administratrice
-            </span>
-          </div>
-          <p class="description">Admin du groupe FDN Live
-            <br>Support du compte Instagram FDN
-          </p>
-        </div>
-      </div>
+      <li>
+        <img src="../../../../assets/img/avatar_x.jpg">
+        <h3 class="title">Karrol</h3>
+        <span class="role">
+          Administratrice
+        </span>
+        <p class="description">Admin du groupe FDN Live
+          <br>Support du compte Instagram FDN
+        </p>
+      </li>
+    </ul>
 
-    </div>
-
-    <!-- Les renforts -->
-    <div class="row renforts text-center justify-content-around encart">
-      <h1>Les renforts</h1>
-
+    <ul class="team-list-content" *ngIf="tabActived === 3">
       <!-- Simon -->
-      <div class="col-lg-4 col-md-6 col-sm-6">
-        <div class="our-team">
-          <div class="pic">
-            <img src="../../../../assets/img/avatar_simon2.jpeg">
-          </div>
-          <div class="team-content">
-            <h3 class="title">Simon</h3>
-            <span class="post">
-              Développeur web
-            </span>
-          </div>
-          <p class="description">Petit gaulois exploité au fond de la cave pour réaliser le site web FDN</p>
-        </div>
-      </div>
-
-      <!-- Clothilde -->
-      <div class="col-lg-4 col-md-6 col-sm-6">
-        <div class="our-team">
-          <div class="pic">
-            <img src="../../../../assets/img/avatar_x.jpg">
-          </div>
-          <div class="team-content">
-            <h3 class="title">Clothilde</h3>
-            <span class="post">
-              Graphiste et photographe
-            </span>
-          </div>
-          <p class="description">
-                Créatrice des supports visuels numériques
-          </p>
-
-        </div>
-      </div>
-
-    </div>
-
-
+      <li>
+        <img src="../../../../assets/img/avatar_simon2.jpeg">
+        <h3 class="title">Simon</h3>
+        <span class="role">Développeur web</span>
+        <p class="description">Petit gaulois exploité au fond de la cave pour réaliser le site web FDN</p>
+      </li>
+      <!-- Chlotilde -->
+      <li>
+        <img src="../../../../assets/img/avatar_x.jpg">
+        <h3 class="title">Clothilde</h3>
+        <span class="role">Graphiste et photographe</span>
+        <p class="description">Créatrice des supports visuels numériques</p>
+      </li>
+    </ul>
   </div>
 </section>
 

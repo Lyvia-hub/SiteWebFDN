@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainTeamComponent implements OnInit {
 
-  constructor() { }
+  tabActived: number
+
+  constructor() {
+    this.tabActived = 1
+  }
 
   ngOnInit(): void {
+  }
+
+  changeTab(event:any, tabToActive:number) {
+    event.preventDefault()
+    if(this.tabActived !== tabToActive) this.tabActived = tabToActive;
+    return false;
   }
 
 }

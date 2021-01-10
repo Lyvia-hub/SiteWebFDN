@@ -55,3 +55,76 @@
   font-size: 20px
   color: var(--mainBlack)
   margin-bottom: 0
+
+/* Système d'onglets */
+/* liste des onglets */
+.team-list-tabs
+  width: 100%
+  list-style: none
+  padding: 0
+  @media (min-width: 768px)
+    display: flex
+
+  li
+    margin: 0 1rem 0 0
+    font-size: 1.5em
+    padding: 0
+    @media (min-width: 768px)
+      font-size: 2em
+      
+    a
+      background-color: transparent
+      color: var(--mainRed)
+      text-decoration: none
+      display: inline-block
+      padding: .5rem .75rem
+      border-radius: .5rem
+      transition: background .3s ease-in-out, color .4s ease-in
+
+    &.actived, &:hover
+      a
+        background-color: var(--mainRed)
+        color: white
+
+/* Contenus des onglets */
+.team-list-content
+  width: 100%
+  list-style: none
+  padding: 2rem 0
+  margin: 0
+  display: grid
+  grid-template-columns: 1fr
+  grid-columns-gap: 1rem
+  @media (min-width: 768px)
+    grid-template-columns: repeat(2, 1fr)
+  @media (min-width: 1200px)
+    grid-template-columns: repeat(3, 1fr)
+  li
+    margin: 10rem 1rem 0 1rem
+    padding: 3rem .5rem .5rem .5rem
+    text-align: center
+    background-color: var(--mainGreen)
+    color: white
+    position: relative
+    img
+      position: absolute
+      bottom: calc(100% - 1.75rem)
+      left: 50%
+      width: 10rem
+      height: 10rem
+      border-radius: 10rem
+      object-fit: cover
+      border: .5rem solid var(--mainGreen)
+      transform: translateX(-50%)
+    h3
+      font-size: 2.2rem
+    .role
+      display: block
+      font-size: 20px
+      font-weight: 900
+      text-transform: uppercase
+    .description
+      padding: 20px 0
+      font-size: 20px
+      color: var(--mainBlack)
+      margin-bottom: 0
