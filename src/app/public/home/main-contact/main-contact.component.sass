@@ -68,6 +68,9 @@ textarea:-ms-input-placeholder
   justify-content: space-between
   padding: 110px 130px 157px 148px
 
+fieldset[disabled="true"]
+  pointer-events: none
+
 .contact-img
   width: 310px
   padding-top: 55px
@@ -239,5 +242,15 @@ textarea.input-field
   .form-contact
     padding: 110px 15px 157px 15px
 
+.errors
+  margin: 1rem 0
+  padding: 0
+  list-style: none
+  li
+    text-align: center
+    color: var(--mainRed)
+    margin-top: .5rem
 
-
+.contact-form-success
+    color: var(--mainGreen)
+    text-align: center
