@@ -7,9 +7,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainContactComponent implements OnInit {
 
-  constructor() { }
+  sended
+  errors
+
+  constructor() {
+    this.sended = false
+    this.errors = []
+  }
 
   ngOnInit(): void {
+  }
+
+  submitForm(event) {
+    event.preventDefault()
+
+    fetch("http://localhost/manage_contact.php", { method: 'POST', body: new FormData(event.target), mode: 'cors', cache: 'default' })
+        .then((response) => response.json())
+        .then((json) => {
+            this.sended = json.sended;
+            this.errors = json.errors;
+            console.log(json)
+        });
+
+    return false
   }
 
 }
