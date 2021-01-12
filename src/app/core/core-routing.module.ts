@@ -10,6 +10,9 @@ import { MainTeamComponent } from '../public/home/main-team/main-team.component'
 import { MainContactComponent } from '../public/home/main-contact/main-contact.component';
 
 import { MainNetflixComponent } from '../public/svod/svod-netflix/main-netflix/main-netflix.component';
+import { MainOcsComponent } from '../public/svod/svod-ocs/main-ocs/main-ocs.component';
+import { MainDisneyPlusComponent } from '../public/svod/svod-disney-plus/main-disney-plus/main-disney-plus.component';
+import { MainAmazonVideoComponent } from '../public/svod/svod-amazon-video/main-amazon-video/main-amazon-video.component';
 
 const routes: Routes = [
   {
@@ -35,6 +38,18 @@ const routes: Routes = [
       {
         path: 'svod-netflix',
         component: MainNetflixComponent
+      },
+      {
+        path: 'svod-ocs',
+        component: MainOcsComponent
+      },
+      {
+        path: 'svod-disney-plus',
+        component: MainDisneyPlusComponent
+      },
+      {
+        path: 'svod-amazon-video',
+        component: MainAmazonVideoComponent
       }
     ]
   }
