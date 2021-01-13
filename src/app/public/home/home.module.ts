@@ -6,6 +6,7 @@ import { MainFdnPresentationComponent } from './main-fdn-presentation/main-fdn-p
 import { MainSvodComponent } from './main-svod/main-svod.component';
 import { MainTeamComponent } from './main-team/main-team.component';
 import { MainContactComponent } from './main-contact/main-contact.component';
+import { HomeRoutingModule } from './home-routing.module';
 
 
 
@@ -19,7 +20,8 @@ import { MainContactComponent } from './main-contact/main-contact.component';
     MainContactComponent
   ],
   imports: [
-    SharedModule
+    SharedModule,
+    HomeRoutingModule
   ]
 })
 export class HomeModule { }
