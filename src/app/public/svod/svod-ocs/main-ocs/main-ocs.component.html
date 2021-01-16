@@ -6,8 +6,74 @@
       <h1 class="ocs-h1">Fans d'<strong class="ocs-title">OCS</strong></h1>
     </div>
 
-    <div class="article_img">
-      <!-- <img class="img-fluid" src="../../../../../assets/img/site-en-construction.jpg" alt=""> -->
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <a class="nav-link active" id="series-tab" data-bs-toggle="tab" href="#series" role="tab" aria-controls="series" aria-selected="true">Série</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" id="films-tab" data-bs-toggle="tab" href="#films" role="tab" aria-controls="films" aria-selected="false">Films</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" id="documentaires-tab" data-bs-toggle="tab" href="#documentaires" role="tab" aria-controls="documentaires" aria-selected="false">Documentaires</a>
+      </li>
+    </ul>
+
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="series" role="tabpanel" aria-labelledby="serie-tab">
+        <!-- cards -->
+        <div class="row">
+          <!-- aricle Chernobyl -->
+          <div class="col-12 col-lg-4">
+            <div class="card text-center" style="max-width: 540px;">
+              <div class="card-header text-center">Mini-Série</div>
+              <div class="card-body">
+                <h5 class="card-title">Chernobyl</h5>
+                <p class="card-text">Les dessous d’une catastrophe nucléaire</p>
+                <a [routerLink]="['/article-chernobyl']" class="btn btn-dark">Lire</a>
+              </div>
+              <div class="card-footer text-muted">#ocs #drame #histoirevraie</div>
+            </div>
+          </div>
+
+
+        <!-- article -->
+          <!-- <div class="col-12 col-lg-4">
+            <div class="card text-center" style="max-width: 540px;">
+              <div class="card-header">
+                Série
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Sons of Anarchy</h5>
+                <p class="card-text">Si vous êtes intéressés par les histoires mêlant guerre de territoires, humour, amour et trahison, cette série est faite pour vous... </p>
+                <a [routerLink]="['/article-soa']" class="btn btn-dark">Lire</a>
+              </div>
+              <div class="card-footer text-muted">#netflix #bikers #drame</div>
+            </div>
+          </div> -->
+
+        <!-- article -->
+        <!-- <div class="col-12 col-lg-4">
+
+          <div class="card text-center" style="max-width: 540px;">
+            <div class="card-header">
+              Culture
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Qu'est-ce-qu'un drama?</h5>
+              <p class="card-text">Les dramas sont de plus en présents sur Netflix, mais de quoi est-il question ?</p>
+              <a [routerLink]="['/article-drama']" class="btn btn-dark">Lire</a>
+            </div>
+            <div class="card-footer text-muted">#netflix #kdrama #vost</div>
+          </div>
+          </div>-->
+        </div>
+      </div>
+      <div class="tab-pane fade" id="films" role="tabpanel" aria-labelledby="films-tab">
+        ...
+      </div>
+      <div class="tab-pane fade" id="documentaires" role="tabpanel" aria-labelledby="documentaires-tab">
+        ...
+      </div>
     </div>
 
   </div>
