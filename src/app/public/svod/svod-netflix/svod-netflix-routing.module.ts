@@ -5,19 +5,9 @@ import { MainNetflixComponent } from './main-netflix/main-netflix.component';
 import { ArticleLupinComponent } from './article-lupin/article-lupin.component';
 import { ArticleSoaComponent } from './article-soa/article-soa.component';
 import { ArticleDramaComponent } from './article-drama/article-drama.component';
-
-// const routes: Routes = [
-//   {
-//     path: 'svod-netflix',
-//     component: MainNetflixComponent,
-//     children: [
-//       {
-//         path: 'article-lupin',
-//         component: ArticleLupinComponent
-//       }
-//     ]
-//   }
-// ];
+import { ArticleTesComponent } from './article-tes/article-tes.component';
+import { ArticleTribulationsPhilComponent } from './article-tribulations-phil/article-tribulations-phil.component';
+import { ArticleSaqqarahComponent } from './article-saqqarah/article-saqqarah.component';
 
 const routes: Routes = [
   {
@@ -36,6 +26,18 @@ const routes: Routes = [
     path: 'article-drama',
     component: ArticleDramaComponent
   },
+  {
+    path: 'article-tous-en-scene',
+    component: ArticleTesComponent
+  },
+  {
+    path: 'article-les-tribulations-culinaires-de-phil',
+    component: ArticleTribulationsPhilComponent
+  },
+  {
+    path: 'article-les-secrets-de-la-tombe-de-saqqarah',
+    component: ArticleSaqqarahComponent
+  }
 
 ];
 

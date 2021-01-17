@@ -9,20 +9,28 @@
     <!-- navbar -->
     <ul class="nav nav-tabs" id="myTab" role="tablist">
       <li class="nav-item" role="presentation">
-        <a class="nav-link active" id="series-tab" data-bs-toggle="tab" href="#series" role="tab" aria-controls="series" aria-selected="true">Série</a>
+        <a class="nav-link active" id="series-tab" data-bs-toggle="tab" href="#series" role="tab" aria-controls="series" aria-selected="true">Séries</a>
       </li>
       <li class="nav-item" role="presentation">
         <a class="nav-link" id="films-tab" data-bs-toggle="tab" href="#films" role="tab" aria-controls="films" aria-selected="false">Films</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" id="drama-tab" data-bs-toggle="tab" href="#drama" role="tab" aria-controls="drama" aria-selected="false">Dramas</a>
       </li>
       <li class="nav-item" role="presentation">
         <a class="nav-link" id="documentaires-tab" data-bs-toggle="tab" href="#documentaires" role="tab" aria-controls="documentaires" aria-selected="false">Documentaires</a>
       </li>
     </ul>
 
+    <!-- article cards -->
     <div class="tab-content" id="myTabContent">
+
+      <!-- Series -->
       <div class="tab-pane fade show active" id="series" role="tabpanel" aria-labelledby="serie-tab">
+
         <!-- cards -->
         <div class="row">
+
           <!-- aricle Lupin -->
           <div class="col-12 col-lg-4">
             <div class="card text-center" style="max-width: 540px;">
@@ -52,46 +60,86 @@
             </div>
           </div>
 
-        <!-- article-drama -->
-        <div class="col-12 col-lg-4">
-
-          <div class="card text-center" style="max-width: 540px;">
-            <div class="card-header">
-              Culture
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Qu'est-ce-qu'un drama?</h5>
-              <p class="card-text">Les dramas sont de plus en présents sur Netflix, mais de quoi est-il question ?</p>
-              <a [routerLink]="['/article-drama']" class="btn btn-dark">Lire</a>
-            </div>
-            <div class="card-footer text-muted">#netflix #kdrama #vost</div>
-          </div>
-          </div>
         </div>
       </div>
 
+      <!-- Films -->
       <div class="tab-pane fade" id="films" role="tabpanel" aria-labelledby="films-tab">
-
-        <!-- article -->
-        <div class="col-12 col-lg-4">
-
-          <div class="card text-center" style="max-width: 540px;">
-            <div class="card-header">Film d'animation</div>
-            <div class="card-body">
-              <h5 class="card-title">Tous en scène</h5>
-              <p class="card-text">Révélez le talent qui sommeille en vous !</p>
-              <a [routerLink]="['/article-tous-en-scene']" class="btn btn-dark">Lire</a>
+        <div class="row">
+          <!-- article -->
+          <div class="col-12 col-lg-4">
+            <div class="card text-center" style="max-width: 540px;">
+              <div class="card-header">Film d'animation</div>
+              <div class="card-body">
+                <h5 class="card-title">Tous en scène</h5>
+                <p class="card-text">Un programme famillial qui vous fera chanter et danser</p>
+                <a [routerLink]="['/article-tous-en-scene']" class="btn btn-dark">Lire</a>
+              </div>
+              <div class="card-footer text-muted">#netflix #animation #famille</div>
             </div>
-            <div class="card-footer text-muted">#netflix #animation #toutpetit #plusgrand</div>
           </div>
+
         </div>
-
       </div>
 
+      <!-- Drama -->
+      <div class="tab-pane fade" id="drama" role="tabpanel" aria-labelledby="drama-tab">
+        <div class="row">
+
+          <!-- article-drama -->
+          <div class="col-12 col-lg-4">
+            <div class="card text-center" style="max-width: 540px;">
+              <div class="card-header">Culture</div>
+              <div class="card-body">
+                <h5 class="card-title">Qu'est-ce-qu'un drama?</h5>
+                <p class="card-text">Les dramas sont de plus en présents sur Netflix, mais de quoi est-il question ?</p>
+                <a [routerLink]="['/article-drama']" class="btn btn-dark">Lire</a>
+              </div>
+              <div class="card-footer text-muted">#netflix #kdrama #vost</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Documentaires -->
       <div class="tab-pane fade" id="documentaires" role="tabpanel" aria-labelledby="documentaires-tab">
-        ...
+        <div class="row">
+
+          <!-- article -->
+          <div class="col-12 col-lg-4">
+
+            <div class="card text-center" style="max-width: 540px;">
+              <div class="card-header">Documentaire culinaire</div>
+              <div class="card-body">
+                <h5 class="card-title">Les tribulations culinaires de Phil</h5>
+                <p class="card-text">Voyage, humour et gourmandise sont aux rendez-vous </p>
+                <a [routerLink]="['/article-les-tribulations-culinaires-de-phil']" class="btn btn-dark">Lire</a>
+              </div>
+              <div class="card-footer text-muted">#voyage #gourmandise #netflix </div>
+            </div>
+
+          </div>
+
+            <!-- article -->
+            <div class="col-12 col-lg-4">
+
+              <div class="card text-center" style="max-width: 540px;">
+                <div class="card-header">Documentaire historique</div>
+                <div class="card-body">
+                  <h5 class="card-title">Les secrets de la tombe de Saqqarah</h5>
+                  <p class="card-text">4 000 ans nous contemplent</p>
+                  <a [routerLink]="['/article-les-secrets-de-la-tombe-de-saqqarah']" class="btn btn-dark">Lire</a>
+                </div>
+                <div class="card-footer text-muted">#histoire #egypte</div>
+              </div>
+            </div>
+
+        </div>
       </div>
+
     </div>
+
   </div>
 </section>
 
