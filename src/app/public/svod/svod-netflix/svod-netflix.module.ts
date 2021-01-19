@@ -8,6 +8,7 @@ import { ArticleDramaComponent } from './article-drama/article-drama.component';
 import { ArticleTesComponent } from './article-tes/article-tes.component';
 import { ArticleTribulationsPhilComponent } from './article-tribulations-phil/article-tribulations-phil.component';
 import { ArticleSaqqarahComponent } from './article-saqqarah/article-saqqarah.component';
+import { ArticleVictoriaEtAbdulComponent } from './article-victoria-et-abdul/article-victoria-et-abdul.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { ArticleSaqqarahComponent } from './article-saqqarah/article-saqqarah.co
     ArticleTesComponent,
     ArticleTribulationsPhilComponent,
     ArticleSaqqarahComponent,
+    ArticleVictoriaEtAbdulComponent,
   ],
   imports: [
     CommonModule,

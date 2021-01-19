@@ -8,6 +8,7 @@ import { ArticleDramaComponent } from './article-drama/article-drama.component';
 import { ArticleTesComponent } from './article-tes/article-tes.component';
 import { ArticleTribulationsPhilComponent } from './article-tribulations-phil/article-tribulations-phil.component';
 import { ArticleSaqqarahComponent } from './article-saqqarah/article-saqqarah.component';
+import { ArticleVictoriaEtAbdulComponent } from './article-victoria-et-abdul/article-victoria-et-abdul.component';
 
 const routes: Routes = [
   {
@@ -37,6 +38,10 @@ const routes: Routes = [
   {
     path: 'article-les-secrets-de-la-tombe-de-saqqarah',
     component: ArticleSaqqarahComponent
+  },
+  {
+    path: 'article-victoria-et-abdul',
+    component: ArticleVictoriaEtAbdulComponent
   }
 
 ];
