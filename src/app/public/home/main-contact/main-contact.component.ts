@@ -21,7 +21,7 @@ export class MainContactComponent implements OnInit {
   submitForm(event) {
     event.preventDefault()
 
-    fetch("http://localhost/manage_contact.php", { method: 'POST', body: new FormData(event.target), mode: 'cors', cache: 'default' })
+    fetch("/manage_contact.php", { method: 'POST', body: new FormData(event.target), mode: 'cors', cache: 'default' })
         .then((response) => response.json())
         .then((json) => {
             this.sended = json.sended;
