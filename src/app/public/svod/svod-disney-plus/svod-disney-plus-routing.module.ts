@@ -1,9 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ArticleAnimalKingdomComponent } from './article-animal-kingdom/article-animal-kingdom.component';
+import { ArticleCerclePoeteDisparuComponent } from './article-cercle-poete-disparu/article-cercle-poete-disparu.component';
+import { ArticleCocoComponent } from './article-coco/article-coco.component';
 import { ArticleLaPlaneteAuTresorComponent } from './article-la-planete-au-tresor/article-la-planete-au-tresor.component';
 import { ArticleMarvelProjectHerosComponent } from './article-marvel-project-heros/article-marvel-project-heros.component';
 import { ArticleOmbreDeMaryComponent } from './article-ombre-de-mary/article-ombre-de-mary.component';
+import { ArticleTheGreatestShowmanComponent } from './article-the-greatest-showman/article-the-greatest-showman.component';
 import { MainDisneyPlusComponent } from './main-disney-plus/main-disney-plus.component';
 
 const routes: Routes = [
@@ -26,7 +29,21 @@ const routes: Routes = [
   {
     path: 'article-marvel-project-heros',
     component: ArticleMarvelProjectHerosComponent
+  },
+  {
+    path: 'article-le_cercle_des_poetes_disparus',
+    component: ArticleCerclePoeteDisparuComponent
+  },
+  {
+    path: 'article-coco',
+    component: ArticleCocoComponent
+  },
+  {
+    path: 'article-the_greatest_showman',
+    component: ArticleTheGreatestShowmanComponent
   }
+
+
 
 ];
 

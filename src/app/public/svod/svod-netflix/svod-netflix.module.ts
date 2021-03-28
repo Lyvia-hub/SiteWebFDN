@@ -9,6 +9,10 @@ import { ArticleTesComponent } from './article-tes/article-tes.component';
 import { ArticleTribulationsPhilComponent } from './article-tribulations-phil/article-tribulations-phil.component';
 import { ArticleSaqqarahComponent } from './article-saqqarah/article-saqqarah.component';
 import { ArticleVictoriaEtAbdulComponent } from './article-victoria-et-abdul/article-victoria-et-abdul.component';
+import { FamilyBusinessComponent } from './family-business/family-business.component';
+import { ArticleTheCrownComponent } from './article-the-crown/article-the-crown.component';
+import { ArticleTheEmpressKiComponent } from './article-the-empress-ki/article-the-empress-ki.component';
+import { ArticleThirteenReasonsWhyComponent } from './article-thirteen-reasons-why/article-thirteen-reasons-why.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +24,10 @@ import { ArticleVictoriaEtAbdulComponent } from './article-victoria-et-abdul/art
     ArticleTribulationsPhilComponent,
     ArticleSaqqarahComponent,
     ArticleVictoriaEtAbdulComponent,
+    FamilyBusinessComponent,
+    ArticleTheCrownComponent,
+    ArticleTheEmpressKiComponent,
+    ArticleThirteenReasonsWhyComponent,
   ],
   imports: [
     CommonModule,
