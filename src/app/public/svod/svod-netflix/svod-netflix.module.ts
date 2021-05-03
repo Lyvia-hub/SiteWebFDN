@@ -15,6 +15,8 @@ import { ArticleTheEmpressKiComponent } from './article-the-empress-ki/article-t
 import { ArticleThirteenReasonsWhyComponent } from './article-thirteen-reasons-why/article-thirteen-reasons-why.component';
 import { ArticleJeVeuxMangerTonPancreasComponent } from './article-je-veux-manger-ton-pancreas/article-je-veux-manger-ton-pancreas.component';
 import { ArticleYourLieInAprilComponent } from './article-your-lie-in-april/article-your-lie-in-april.component';
+import { ArticleBronxComponent } from './article-bronx/article-bronx.component';
+import { ArticleDearWhitePeopleComponent } from './article-dear-white-people/article-dear-white-people.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +34,8 @@ import { ArticleYourLieInAprilComponent } from './article-your-lie-in-april/arti
     ArticleThirteenReasonsWhyComponent,
     ArticleJeVeuxMangerTonPancreasComponent,
     ArticleYourLieInAprilComponent,
+    ArticleBronxComponent,
+    ArticleDearWhitePeopleComponent,
   ],
   imports: [
     CommonModule,

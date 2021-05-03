@@ -15,6 +15,8 @@ import { ArticleTheEmpressKiComponent } from './article-the-empress-ki/article-t
 import { ArticleThirteenReasonsWhyComponent } from './article-thirteen-reasons-why/article-thirteen-reasons-why.component';
 import { ArticleJeVeuxMangerTonPancreasComponent } from './article-je-veux-manger-ton-pancreas/article-je-veux-manger-ton-pancreas.component';
 import { ArticleYourLieInAprilComponent } from './article-your-lie-in-april/article-your-lie-in-april.component';
+import { ArticleBronxComponent } from './article-bronx/article-bronx.component';
+import { ArticleDearWhitePeopleComponent } from './article-dear-white-people/article-dear-white-people.component';
 
 const routes: Routes = [
   {
@@ -72,6 +74,14 @@ const routes: Routes = [
   {
     path: 'article-your_lie_in_april',
     component: ArticleYourLieInAprilComponent
+  },
+  {
+    path: 'article-bronx',
+    component: ArticleBronxComponent
+  },
+  {
+    path: 'article-dear_white_people',
+    component: ArticleDearWhitePeopleComponent
   }
 
 ];
