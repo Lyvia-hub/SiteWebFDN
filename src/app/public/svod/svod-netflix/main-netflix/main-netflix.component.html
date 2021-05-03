@@ -20,6 +20,9 @@
       <li class="nav-item" role="presentation">
         <a class="nav-link" id="documentaires-tab" data-bs-toggle="tab" href="#documentaires" role="tab" aria-controls="documentaires" aria-selected="false">Documentaires</a>
       </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" id="animes-tab" data-bs-toggle="tab" href="#animes" role="tab" aria-controls="animes" aria-selected="false">Animés</a>
+      </li>
     </ul>
 
     <!-- article cards -->
@@ -204,6 +207,41 @@
         </div>
       </div>
 
+       <!-- Animes -->
+      <div class="tab-pane fade" id="animes" role="tabpanel" aria-labelledby="animes-tab">
+        <div class="row">
+
+          <!-- article -->
+          <div class="col-12 col-lg-4">
+
+            <div class="card text-center" style="max-width: 540px;">
+              <div class="card-header">Long métrage</div>
+              <div class="card-body">
+                <h5 class="card-title">Je veux manger ton pancréas</h5>
+                <p class="card-text">Tout les oppose... La maladie les rapproche</p>
+                <a [routerLink]="['/article-je_veux_manger_ton_pancreas']" class="btn btn-dark">Lire</a>
+              </div>
+              <div class="card-footer text-muted">#animé #netflix</div>
+            </div>
+
+          </div>
+
+          <!-- article -->
+            <div class="col-12 col-lg-4">
+
+              <div class="card text-center" style="max-width: 540px;">
+                <div class="card-header">Série</div>
+                <div class="card-body">
+                  <h5 class="card-title">Your lie in April</h5>
+                  <p class="card-text">L'animé d'une vie, qui nous ramène à la réalité</p>
+                  <a [routerLink]="['/article-your_lie_in_april']" class="btn btn-dark">Lire</a>
+                </div>
+                <div class="card-footer text-muted">#animé #netflix</div>
+              </div>
+            </div>
+
+        </div>
+      </div>
     </div>
 
   </div>

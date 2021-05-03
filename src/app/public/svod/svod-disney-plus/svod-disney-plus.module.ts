@@ -9,11 +9,13 @@ import { ArticleAnimalKingdomComponent } from './article-animal-kingdom/article-
 import { ArticleCerclePoeteDisparuComponent } from './article-cercle-poete-disparu/article-cercle-poete-disparu.component';
 import { ArticleCocoComponent } from './article-coco/article-coco.component';
 import { ArticleTheGreatestShowmanComponent } from './article-the-greatest-showman/article-the-greatest-showman.component';
+import { ArticleClochetteComponent } from './article-clochette/article-clochette.component';
+import { ArticleSectionStarComponent } from './article-section-star/article-section-star.component';
 
 
 
 @NgModule({
-  declarations: [MainDisneyPlusComponent, ArticleOmbreDeMaryComponent, ArticleMarvelProjectHerosComponent, ArticleLaPlaneteAuTresorComponent, ArticleAnimalKingdomComponent, ArticleCerclePoeteDisparuComponent, ArticleCocoComponent, ArticleTheGreatestShowmanComponent],
+  declarations: [MainDisneyPlusComponent, ArticleOmbreDeMaryComponent, ArticleMarvelProjectHerosComponent, ArticleLaPlaneteAuTresorComponent, ArticleAnimalKingdomComponent, ArticleCerclePoeteDisparuComponent, ArticleCocoComponent, ArticleTheGreatestShowmanComponent, ArticleClochetteComponent, ArticleSectionStarComponent],
   imports: [
     CommonModule,
     SvodDisneyPlusRoutingModule

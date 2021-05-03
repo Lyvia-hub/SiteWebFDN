@@ -13,6 +13,8 @@ import { FamilyBusinessComponent } from './family-business/family-business.compo
 import { ArticleTheCrownComponent } from './article-the-crown/article-the-crown.component';
 import { ArticleTheEmpressKiComponent } from './article-the-empress-ki/article-the-empress-ki.component';
 import { ArticleThirteenReasonsWhyComponent } from './article-thirteen-reasons-why/article-thirteen-reasons-why.component';
+import { ArticleJeVeuxMangerTonPancreasComponent } from './article-je-veux-manger-ton-pancreas/article-je-veux-manger-ton-pancreas.component';
+import { ArticleYourLieInAprilComponent } from './article-your-lie-in-april/article-your-lie-in-april.component';
 
 const routes: Routes = [
   {
@@ -62,6 +64,14 @@ const routes: Routes = [
   {
     path: 'article-thirteen_reasons_why',
     component: ArticleThirteenReasonsWhyComponent
+  },
+  {
+    path: 'article-je_veux_manger_ton_pancreas',
+    component: ArticleJeVeuxMangerTonPancreasComponent
+  },
+  {
+    path: 'article-your_lie_in_april',
+    component: ArticleYourLieInAprilComponent
   }
 
 ];
