@@ -17,6 +17,10 @@ import { ArticleJeVeuxMangerTonPancreasComponent } from './article-je-veux-mange
 import { ArticleYourLieInAprilComponent } from './article-your-lie-in-april/article-your-lie-in-april.component';
 import { ArticleBronxComponent } from './article-bronx/article-bronx.component';
 import { ArticleDearWhitePeopleComponent } from './article-dear-white-people/article-dear-white-people.component';
+import { ArticleDraculaComponent } from './article-dracula/article-dracula.component';
+import { ArticleDetroitComponent } from './article-detroit/article-detroit.component';
+import { ArticleLaConvocationComponent } from './article-la-convocation/article-la-convocation.component';
+import { ArticleAfterLifeComponent } from './article-after-life/article-after-life.component';
 
 const routes: Routes = [
   {
@@ -82,7 +86,24 @@ const routes: Routes = [
   {
     path: 'article-dear_white_people',
     component: ArticleDearWhitePeopleComponent
+  },
+  {
+    path: 'article-dracula',
+    component: ArticleDraculaComponent
+  },
+  {
+    path: 'article-detroit',
+    component: ArticleDetroitComponent
+  },
+  {
+    path: 'article-la-convocation',
+    component: ArticleLaConvocationComponent
+  },
+  {
+    path: 'article-after-life',
+    component: ArticleAfterLifeComponent
   }
+
 
 ];
 
